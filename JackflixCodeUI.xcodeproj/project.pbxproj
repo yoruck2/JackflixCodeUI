@@ -10,11 +10,12 @@
 		840338602C0F779500A30BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403385F2C0F779500A30BB2 /* AppDelegate.swift */; };
 		840338622C0F779500A30BB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840338612C0F779500A30BB2 /* SceneDelegate.swift */; };
 		840338642C0F779500A30BB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840338632C0F779500A30BB2 /* MainViewController.swift */; };
-		840338672C0F779500A30BB2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 840338662C0F779500A30BB2 /* Base */; };
 		840338692C0F779700A30BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840338682C0F779700A30BB2 /* Assets.xcassets */; };
 		8403386C2C0F779700A30BB2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8403386B2C0F779700A30BB2 /* Base */; };
 		840338742C0F83D000A30BB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840338732C0F83D000A30BB2 /* LoginViewController.swift */; };
 		840338772C0F8AA800A30BB2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 840338762C0F8AA800A30BB2 /* SnapKit */; };
+		840338AF2C10B56B00A30BB2 /* HotContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840338AE2C10B56B00A30BB2 /* HotContentView.swift */; };
+		840338B12C11C79E00A30BB2 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840338B02C11C79E00A30BB2 /* MovieData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +23,12 @@
 		8403385F2C0F779500A30BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840338612C0F779500A30BB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		840338632C0F779500A30BB2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		840338662C0F779500A30BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840338682C0F779700A30BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8403386B2C0F779700A30BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8403386D2C0F779700A30BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840338732C0F83D000A30BB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		840338AE2C10B56B00A30BB2 /* HotContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotContentView.swift; sourceTree = "<group>"; };
+		840338B02C11C79E00A30BB2 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,10 @@
 			children = (
 				8403385F2C0F779500A30BB2 /* AppDelegate.swift */,
 				840338612C0F779500A30BB2 /* SceneDelegate.swift */,
+				840338B02C11C79E00A30BB2 /* MovieData.swift */,
 				840338632C0F779500A30BB2 /* MainViewController.swift */,
 				840338732C0F83D000A30BB2 /* LoginViewController.swift */,
-				840338652C0F779500A30BB2 /* Main.storyboard */,
+				840338AE2C10B56B00A30BB2 /* HotContentView.swift */,
 				840338682C0F779700A30BB2 /* Assets.xcassets */,
 				8403386A2C0F779700A30BB2 /* LaunchScreen.storyboard */,
 				8403386D2C0F779700A30BB2 /* Info.plist */,
@@ -138,7 +141,6 @@
 			files = (
 				840338692C0F779700A30BB2 /* Assets.xcassets in Resources */,
 				8403386C2C0F779700A30BB2 /* Base in Resources */,
-				840338672C0F779500A30BB2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,24 +151,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840338B12C11C79E00A30BB2 /* MovieData.swift in Sources */,
 				840338742C0F83D000A30BB2 /* LoginViewController.swift in Sources */,
 				840338642C0F779500A30BB2 /* MainViewController.swift in Sources */,
 				840338602C0F779500A30BB2 /* AppDelegate.swift in Sources */,
 				840338622C0F779500A30BB2 /* SceneDelegate.swift in Sources */,
+				840338AF2C10B56B00A30BB2 /* HotContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		840338652C0F779500A30BB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				840338662C0F779500A30BB2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8403386A2C0F779700A30BB2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,7 +305,6 @@
 				INFOPLIST_FILE = JackflixCodeUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -342,7 +337,6 @@
 				INFOPLIST_FILE = JackflixCodeUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

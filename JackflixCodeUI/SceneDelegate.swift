@@ -13,13 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
         
-        let firstVc = UINavigationController(rootViewController: MainViewController())
-        let secondVc = UINavigationController(rootViewController: LoginViewController())
+        let firstVC = UINavigationController(rootViewController: MainViewController())
+        let secondVC = UINavigationController(rootViewController: LoginViewController())
         
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([firstVc, secondVc], animated: true)
+        tabBarController.setViewControllers([firstVC, secondVC], animated: true)
+        tabBarController.tabBar.tintColor = UIColor(named: "keyColor")
         
         if let items = tabBarController.tabBar.items {
             items[0].selectedImage = UIImage(systemName: "popcorn.fill")
