@@ -67,6 +67,14 @@ class HotContentView: UIView {
         
         configureHierachy()
         configureLayout()
+//        updateConstraints()
+//        updateConstraintsIfNeeded()
+//        needsUpdateConstraints()
+//        setNeedsLayout()
+//        setNeedsDisplay()
+//        setNeedsUpdateConstraints()
+//        layoutIfNeeded()
+        
         print("생성됨")
         print("-----------")
     }
