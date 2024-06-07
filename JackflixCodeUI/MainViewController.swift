@@ -60,24 +60,9 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    
-    lazy var hotContentView1 = {
-        let view = HotContentView()
-        
-        return view
-    }()    
-    
-    lazy var hotContentView2 = {
-        let view = HotContentView()
-        
-        return view
-    }()
-    
-    lazy var hotContentView3 = {
-        let view = HotContentView()
-        
-        return view
-    }()
+    var hotContentView1 = HotContentView()
+    var hotContentView2 = HotContentView()
+    var hotContentView3 = HotContentView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

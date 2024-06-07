@@ -54,12 +54,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                           recommendationCodeTextField
         ]
         
+        // TODO: extension 메서드로 깔끔하게 만들어보기 -
         textFields.forEach { textField in
             textField.backgroundColor = .gray
             textField.textColor = .white
             textField.layer.cornerRadius = 5
             textField.textAlignment = .center
-            textField.attributedPlaceholder = NSAttributedString(string: "이메일 주소 또는 전화번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+            textField.attributedPlaceholder = NSAttributedString(string: "이메일 주소 또는 전화번호", 
+                                                                 attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         }
         
         let stackView = UIStackView(arrangedSubviews: textFields)
