@@ -109,17 +109,17 @@ class MainViewController: UIViewController {
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
     }
+    // TODO: 플레이 버튼 누를 시 랜덤으로 추천영화가 바뀌는 로직 왜안되지.. -
     
     @objc
     func playButtonTapped() {
         hotContentView1 = HotContentView()
         hotContentView2 = HotContentView()
         hotContentView3 = HotContentView()
+        
         hotContentView1.top10Image.isHidden.toggle()
         hotContentView1.posterImageView.image = UIImage(named: MovieData.randomMovie())
-        hotContentView1.setNeedsLayout()
-        hotContentView1.setNeedsDisplay()
-        hotContentView1.layoutIfNeeded()
+ 
         
         //        updateConstraints()
         //        updateConstraintsIfNeeded()
