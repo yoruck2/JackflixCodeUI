@@ -98,13 +98,13 @@ class MainViewController: UIViewController {
     
     @objc
     func playButtonTapped() {
-        hotContentView1 = HotContentView()
-        hotContentView2 = HotContentView()
-        hotContentView3 = HotContentView()
-        
-        hotContentView1.top10Image.isHidden.toggle()
-        hotContentView1.posterImageView.image = UIImage(named: MovieData.randomMovie())
- 
+        mainPosterImageView.image = UIImage(named: MovieData.randomMovie())
+        [hotContentView1, hotContentView2, hotContentView3].forEach {
+            $0.posterImageView.image = UIImage(named: MovieData.randomMovie())
+            $0.top10Image.isHidden = .random()
+            $0.newEpisodStackView.isHidden = .random()
+            $0.newSeriesLabel.isHidden = .random()
+        }
         
         //        updateConstraints()
         //        updateConstraintsIfNeeded()
@@ -128,7 +128,7 @@ extension MainViewController {
         }
         
         mainPosterImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(100)
+            make.top.equalTo(view.safeAreaLayoutGuide)
             make.leading.equalToSuperview().inset(15)
             make.trailing.equalToSuperview().inset(15)
             make.bottom.equalToSuperview().inset(300)
